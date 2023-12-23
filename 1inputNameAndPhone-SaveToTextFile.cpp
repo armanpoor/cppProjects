@@ -14,7 +14,7 @@ int numPersons = 0;
 
 void searchByNameOrNumber(const string& searchTerm) {
     for (int i = 0; i < numPersons; i++) {
-        if (persons[i].name == searchTerm && persons[i].number == searchTerm) {
+        if (persons[i].name == searchTerm || persons[i].number == searchTerm) {
             cout << "Name: " << persons[i].name << ", Number: " << persons[i].number << endl;
         }
     }
